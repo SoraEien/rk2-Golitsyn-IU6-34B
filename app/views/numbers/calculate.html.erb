@@ -1,0 +1,32 @@
+<h1>Number Replacement</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Original</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <% params[:sequence].split.each_with_index do |value, index| %>
+      <td><%= value.to_i %></td>
+    <% end %>
+  </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Replacement</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <% params[:sequence].split.each_with_index do |value, index| %>
+      <td><%= @result[index] %></td>
+    <% end %>
+  </tr>
+  </tbody>
+</table>
+<%=link_to "repeat calculation", root_path %>

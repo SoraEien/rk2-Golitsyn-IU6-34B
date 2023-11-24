@@ -1,0 +1,15 @@
+<h1>Number Replacement</h1>
+<p>Вариант 5
+  Голицын Дмитрий Валерьевич
+</p>
+<p>Дан массив чисел arr_x. Определить сумму
+  четных чисел массива, и поместить её вместо последнего элемента массива, делящегося на 6 без
+  остатка .</p>
+
+<%= form_tag numbers_calculate_path, method: :get do %>
+  <%= label_tag :sequence, "Enter a sequence of numbers (separated by spaces):" %>
+  <%= text_field_tag :sequence %><br>
+
+
+  <%= submit_tag "Calculate" %>
+<% end %>
